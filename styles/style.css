@@ -5,12 +5,18 @@
 common styles  
 --------------------------------------------------------------------------*/
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #fff;
-
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: rgba(119, 119, 119, 0.05);
+ 
 }
 
 /* --------------------------------------------------------------------------
@@ -23,23 +29,137 @@ body {
 .text-img-wrapper {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    padding: 150px 140px 86px;
+    padding: 15rem 14rem 8.6rem;
 }
 .text-content h1 {
-    font-size: 64px ;
+    font-size: 6.4rem ;
     font-weight: 700;
     color: #fff;
-    margin-bottom: 27px;
+    margin-bottom: 2.7rem;
 }
-.text-content a {
+ .live-anchor{
+    font-size: 1.6rem;
     color: #fff;
     text-decoration: none;
     background-color:#E02C6D;
-    padding: 10px 24px;
-    border-radius: 10px;
+    padding: 1rem 2.4rem;
+    border-radius: 1rem;
+}
+
+.watch-live{
+    color: #fff;
+    padding-left: 1rem;
+    width: 2.4rem;
+    height: 2.4rem;
 }
 
 .header-container .banner img {
-    width: 550px;
-    height: 438px;
+    width: 55rem;
+    height: 43.8rem;
+}
+
+
+/* ----------------------------------------------------------------
+Players Container  
+-----------------------------------------------------------------*/
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    padding: 7rem 21rem 0rem 18rem;
+}
+
+.player {
+    padding-right: 3rem;
+    padding-bottom: 2.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 47rem;
+    width: 33rem;
+    /* box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1); */
+}
+
+.player-detail {
+    background-color: #fff;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+
+}
+
+.player-detail .thumbnail img {
+    height: 25.6rem;
+    width: 30rem;
+}
+
+.player-detail h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    
+}
+
+/* ------------------------------------------------------
+Highlights Section  -----------------------------------*/
+
+.highlights-container {
+    display: flex;
+    justify-content: center;
+    margin: 16.5rem 15.6rem 15.8rem 18.2rem;
+
+}
+
+.highlights-text {
+    width: 100%;
+    padding-right: 6.6rem;
+}
+.highlights-text h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+.highlights-text p {
+    padding-bottom: 2rem;
+}
+
+.highlights-img img {
+    width: 56rem;
+    height: 42rem;
+}
+
+/* -----------------------------------------------------
+Footer  ----------------------------------------------*/
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-thumbnail img {
+    width: 48rem;
+    height: 11rem;
+}
+.footer-info p {
+    text-align: center;
+    margin-left: 1rem;
+
+}
+.footer-info a  {
+    display: inline-block;
+    margin-right: 1.2rem;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(118, 118, 226);
+    border-radius: 50%;
+    padding: .5rem 1rem ;
+}
+
+.footer-info a:hover {
+    transform: scale(1.3);
+    transition: transform .3s;
+}
+
+.footer-info p.copyright {
+    font-size: 1.8rem;
 }
